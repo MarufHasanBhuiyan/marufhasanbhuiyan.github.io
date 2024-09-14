@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maruf Hasan Bhuiyan - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #34495e;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Header */
+        header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        header img {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            margin-top: -40px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        .about,
+        .skills,
+        .contact,
+        .projects {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            background-color: #ecf0f1;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #34495e;
+        }
+
+        .contact p, .projects p {
+            margin: 5px 0;
+        }
+
+        .contact a, .projects a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 768px) {
+            nav a {
+                margin: 0 10px;
+            }
+
+            header {
+                padding: 80px 0;
+            }
+
+            header img {
+                height: 120px;
+                width: 120px;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .skills ul li {
+                font-size: 0.9rem;
+            }
+
+            .contact p, .about p, .projects p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            header img {
+                height: 100px;
+                width: 100px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .skills ul li {
+                font-size: 0.85rem;
+            }
+
+            .contact p, .about p, .projects p {
+                font-size: 0.85rem;
+            }
+
+            footer {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <a href="https://github.com/MarufHasanBhuiyan" target="_blank">Home</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <img src="D:\Picture\Fav pic\Picsart_23-05-24_19-06-42-328.jpg" alt="Maruf Hasan Bhuiyan Profile Picture">
+        <h1>Maruf Hasan Bhuiyan</h1>
+        <p>B.Sc. in Computer Science & Engineering, Daffodil International University</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Maruf Hasan Bhuiyan, a 22-year-old Computer Science student from Dhaka, Bangladesh.
+            I'm passionate about technology, problem-solving, and programming. 
+            Currently, I am pursuing my B.Sc. in Computer Science & Engineering from Daffodil International University.
+            With skills in HTML, Python, JAVA, and various Microsoft tools like Word, Excel, PowerPoint, and Access, 
+            I aim to contribute to the tech world by creating efficient, user-friendly software and web applications.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Microsoft Word</li>
+            <li>Microsoft PowerPoint</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft Access</li>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>JAVA</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <p>No projects available at the moment. Check back soon!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email (Personal): <a href="mailto:marufhasan400@gmail.com">marufhasan400@gmail.com</a></p>
+        <p>Email (University): <a href="mailto:bhuiyan22205101134@diu.edu.bd">bhuiyan22205101134@diu.edu.bd</a></p>
+        <p>Phone 1: <a href="tel:+8801853308029">01853308029</a></p>
+        <p>Phone 2: <a href="tel:+8801518996818">01518996818</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/marufhasan" target="_blank">Facebook Profile</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Connect with me on</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/marufhasan" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/MarufHasanBhuiyan" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
