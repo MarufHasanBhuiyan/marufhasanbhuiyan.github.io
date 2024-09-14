@@ -74,7 +74,9 @@
         .about,
         .skills,
         .contact,
-        .projects {
+        .projects,
+        .education,
+        .resume {
             margin-bottom: 30px;
         }
 
@@ -97,15 +99,60 @@
             border-left: 5px solid #34495e;
         }
 
-        .contact p, .projects p {
+        .contact p,
+        .projects p,
+        .education p,
+        .resume p {
             margin: 5px 0;
         }
 
-        .contact a, .projects a {
+        .contact a,
+        .projects a,
+        .education a,
+        .resume a {
             color: #2980b9;
             text-decoration: none;
         }
 
+        /* Resume Section */
+        .resume-content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .resume-content h2 {
+            text-align: center;
+            color: #34495e;
+        }
+
+        .resume-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Education Table */
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .education-table th,
+        .education-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .education-table th {
+            background-color: #34495e;
+            color: white;
+            font-weight: bold;
+        }
+
+        .education-table td {
+            text-align: center;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -156,7 +203,7 @@
                 font-size: 0.9rem;
             }
 
-            .contact p, .about p, .projects p {
+            .contact p, .about p, .projects p, .education p, .resume p {
                 font-size: 0.95rem;
             }
         }
@@ -179,7 +226,7 @@
                 font-size: 0.85rem;
             }
 
-            .contact p, .about p, .projects p {
+            .contact p, .about p, .projects p, .education p, .resume p {
                 font-size: 0.85rem;
             }
 
@@ -194,6 +241,10 @@
     <nav>
         <div>
             <a href="https://github.com/MarufHasanBhuiyan" target="_blank">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#resume">Resume</a>
             <a href="#projects">Projects</a>
         </div>
     </nav>
@@ -206,7 +257,7 @@
     </header>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
         <h2>About Me</h2>
         <p>
             Hi, I'm Maruf Hasan Bhuiyan, a 22-year-old Computer Science student from Dhaka, Bangladesh.
@@ -215,10 +266,14 @@
             With skills in HTML, Python, JAVA, and various Microsoft tools like Word, Excel, PowerPoint, and Access, 
             I aim to contribute to the tech world by creating efficient, user-friendly software and web applications.
         </p>
+        <p>
+            In my free time, I enjoy gymming, playing guitar, reading books, and gaming. These hobbies help me stay balanced 
+            and continuously fuel my creativity and problem-solving skills.
+        </p>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2>Skills</h2>
         <ul>
             <li>Microsoft Word</li>
@@ -231,10 +286,79 @@
         </ul>
     </section>
 
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2>Education</h2>
+        <table class="education-table">
+            <thead>
+                <tr>
+                    <th>EXAM</th>
+                    <th>INSTITUTION</th>
+                    <th>BOARD</th>
+                    <th>RESULT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P.S.C</td>
+                    <td>SIRAJ UDDIN SARKER SCHOOL AND COLLEGE</td>
+                    <td>DHAKA</td>
+                    <td>GPA 5.00</td>
+                </tr>
+                <tr>
+                    <td>J.S.C</td>
+                    <td>SIRAJ UDDIN SARKER SCHOOL AND COLLEGE</td>
+                    <td>DHAKA</td>
+                    <td>GPA 5.00</td>
+                </tr>
+                <tr>
+                    <td>S.S.C</td>
+                    <td>SIRAJ UDDIN SARKER SCHOOL AND COLLEGE</td>
+                    <td>DHAKA</td>
+                    <td>GPA 5.00</td>
+                </tr>
+                <tr>
+                    <td>H.S.C</td>
+                    <td>RAJUK UTTARA MODEL COLLEGE</td>
+                    <td>DHAKA</td>
+                    <td>GPA 5.0</td>
+                </tr>
+                <tr>
+                    <td>B.SC IN CSE</td>
+                    <td>DAFFODIL INTERNATIONAL UNIVERSITY</td>
+                    <td>DHAKA</td>
+                    <td>CGPA 4 OUT OF 4 IN CONSECUTIVE R SEMESTERS</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+        <h2>Resume</h2>
+        <div class="resume-content">
+            <h2>Maruf Hasan Bhuiyan</h2>
+            <p><strong>Date of Birth:</strong> October 20, 2002</p>
+            <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+            <p><strong>Education:</strong> B.Sc. in Computer Science & Engineering, Daffodil International University</p>
+            <p><strong>Skills:</strong></p>
+            <ul>
+                <li>Microsoft Word</li>
+                <li>Microsoft PowerPoint</li>
+                <li>Microsoft Excel</li>
+                <li>Microsoft Access</li>
+                <li>HTML</li>
+                <li>Python</li>
+                <li>JAVA</li>
+            </ul>
+            <p><strong>Hobbies:</strong> Gymming, Playing Guitar, Reading Books, Gaming</p>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <h2>Projects</h2>
-        <p>No projects available at the moment. Check back soon!</p>
+        <p>No projects available at the moment. Check back later!</p>
     </section>
 
     <!-- Contact Section -->
